@@ -1,6 +1,8 @@
 # my-blog-v3-admin
 
 > A Vue.js project
+```
+线上: admin.xiaohai-learn.pub
 
 ## Build Setup
 
