@@ -2,7 +2,7 @@
 
 > A Vue.js project
 ```
-线上: admin.xiaohai-learn.pub
+线上: www.xiaohai-learn.pub
 ```
 ## Build Setup
 
