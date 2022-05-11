@@ -161,6 +161,11 @@ export default {
               idx: "20",
               title: "广告管理",
               path: "/managewebsite/manageadvertisement",
+            },
+            {
+              idx: "21",
+              title: "友链管理",
+              path: "/managewebsite/manageafriendlink",
             }
           ],
         },

@@ -3,8 +3,10 @@ export default {
 
     //api 路径
     apibaseurl : '/admin',
+    // apibaseurl : 'https://www.xiaohai-learn.pub/api/admin',
     //图片基础路径
-    userimgbaseurl :'http://server.xiaohai-learn.pub:8889',
+    // userimgbaseurl :'http://server.xiaohai-learn.pub:8889',
+    userimgbaseurl :'https://www.xiaohai-learn.pub/image',
     
     //summary图片只规定上传一张，重复上传为替换
    
@@ -29,5 +31,8 @@ export default {
     manageusertablelength:8,
 
     //权限表 管理员 分页长度
-    managepriviligetablelength:8
+    managepriviligetablelength:8,
+
+    //友链表 分页长度
+    friendlinktablelength:8
 }

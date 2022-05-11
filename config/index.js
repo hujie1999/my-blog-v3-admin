@@ -12,7 +12,8 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/admin':{
-        target: 'http://server.xiaohai-learn.pub:8889/api/admin/',
+        // target: 'http://server.xiaohai-learn.pub:8889/api/admin/',
+        target: 'http://localhost:8889/api/admin/',
         changeOrigin: true,
         ws:true,
         pathRewrite: {

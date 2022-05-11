@@ -490,6 +490,34 @@ export function deleteroleAPI(params){
 }
 
 
+/**
+ * 友链
+ * hujie
+ * 2022.05.12
+ */
 
+//获取全部友链 
+export function getallfriendlinkAPI(params){
+    return http.post('/getallfriendlink',params)
+}
+//全部友链条数 
+export function getallfriendlinkcountAPI(){
+    return http.get('/getallfriendlinkcount')
+}
 
-
+//获取一条友链 
+export function getfriendlinkAPI(params){
+    return http.post('/getfriendlink',params)
+}
+//添加友链 
+export function addfriendlinkAPI(params){
+    return http.post('/addfriendlink',params)
+}
+//删除友链
+export function deletefriendlinkAPI(params){
+    return http.post('/deletefriendlink',params)
+}
+//更新友链
+export function updatefriendlinkAPI(params){
+    return http.post('/updatefriendlink',params)
+}

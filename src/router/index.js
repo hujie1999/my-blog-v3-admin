@@ -272,6 +272,17 @@ const router = new Router({
                 managewebsite: ()=>import('../views/ManageWebsite/Children/ManageAdvertisement.vue')
               },
             },
+            {
+              path:'manageafriendlink',
+              name:'manageafriendlink',
+              meta: {
+                tittle : '友链管理',
+                requiresAuth: true,
+              },
+              components:{
+                managewebsite: ()=>import('../views/ManageWebsite/Children/ManageFriendLink.vue')
+              },
+            },
           ]
         },
         {
