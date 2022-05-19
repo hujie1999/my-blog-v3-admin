@@ -166,10 +166,10 @@ export default {
     flex-direction: column;
 }
 .img-control img{
-    min-height: 295px;
-    min-width: 100%;
-    height: auto;
-    width: auto;
+    /* min-height: 295px;
+    min-width: 100%; */
+    height: 100%;
+    width: 100%;
     background: #fff;
 
 }
