@@ -2,8 +2,8 @@ export default {
     
 
     //api 路径
-    apibaseurl : '/admin',
-    // apibaseurl : 'https://www.xiaohai-learn.pub/api/admin',
+    // apibaseurl : '/admin',
+    apibaseurl : 'https://www.xiaohai-learn.pub/api/admin',
     //图片基础路径
     // userimgbaseurl :'http://server.xiaohai-learn.pub:8889',
     userimgbaseurl :'https://www.xiaohai-learn.pub/image',
