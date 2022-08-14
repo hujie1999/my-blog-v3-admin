@@ -51,6 +51,7 @@
       
       <div
       v-if="activeName=='preexamine_user'"
+      class="op-btn"
       >
         <el-button 
         type="primary" 
@@ -382,6 +383,8 @@ export default {
     box-shadow: none !important; 
     border-bottom: 0 !important;
   }
-  
+  .op-btn{
+    padding: 5px 10px;
+  }
 }
 </style>

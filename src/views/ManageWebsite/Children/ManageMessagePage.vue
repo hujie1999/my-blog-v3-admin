@@ -1,6 +1,6 @@
 <template>
   <div id="manage-message">
-    <el-form ref="form" :model="presend" label-width="100px">
+    <el-form ref="form" :model="presend" label-width="80px">
       <el-form-item label="标题">
         <h2 v-text="presend.Message_Title"></h2>
       </el-form-item>
@@ -150,7 +150,8 @@ export default {
 
 <style lang='less' scoped>
 #manage-message {
-  height: 80vh;
+  // height: 80vh;
+  height: auto;
   width: auto;
   // margin: 0px 5px;
   // padding: 5px 10px;

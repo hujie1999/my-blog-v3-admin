@@ -182,8 +182,8 @@ export default {
   height: auto;
   overflow: auto;
   .el-tabs--border-card {
-    
-    width: 100% !important;
+    box-shadow: none !important; 
+    border-bottom: 0 !important;
   }
   .el-tab-pane{
     width: 100%;

@@ -1,6 +1,6 @@
 <template>
   <div id="manage-about">
-    <el-form ref="form"  label-width="100px">
+    <el-form ref="form"  label-width="80px">
       <el-form-item label="标题">
         <h2 v-text="old_About_Tittle"></h2>
       </el-form-item>
@@ -154,7 +154,8 @@ export default {
 
 <style lang='less' scoped>
 #manage-about {
-  height: 80vh;
+  // height: 80vh;
+  height: auto;
   width: auto;
   // margin: 0px 5px;
   // padding: 5px 10px;

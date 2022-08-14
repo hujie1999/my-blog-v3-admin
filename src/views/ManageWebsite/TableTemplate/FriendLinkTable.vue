@@ -15,7 +15,7 @@
               </div>
         </template>
       </el-table-column>
-      <el-table-column prop="FriendWebAvatar"  label="友链头像地址" width="220">
+      <el-table-column prop="FriendWebAvatar" :show-overflow-tooltip="true"  label="友链头像地址" width="220">
       </el-table-column>
       <el-table-column prop="FriendWebName" :show-overflow-tooltip="true" label="友链网站名称" width="140">
       </el-table-column>
@@ -26,7 +26,7 @@
             <a :href="props.row.FriendWebLink" target="_blank">{{props.row.FriendWebLink}}</a>              
         </template>
       </el-table-column>
-      <el-table-column prop="FriendName"  label="所有者" width="70">
+      <el-table-column prop="FriendName" :show-overflow-tooltip="true"  label="所有者" width="70">
       </el-table-column>
       <el-table-column prop="LinkCreatTime" label="友链发布日期"  :formatter="dateFormat" width="180">
       </el-table-column>

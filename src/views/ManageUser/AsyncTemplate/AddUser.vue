@@ -1,7 +1,7 @@
 <template>
   <!-- <p>AddUser</p> -->
   <div class="add-user">
-      <el-form ref="form" :model="presend" label-width="100px">
+      <el-form ref="form" :model="presend" label-width="80px">
                 
                 <el-form-item label="头像">
                     <el-avatar size="large" src=""></el-avatar>

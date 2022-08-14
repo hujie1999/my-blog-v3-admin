@@ -1,6 +1,6 @@
 <template>
   <div id="manage-background-img">
-    <el-form ref="form"  label-width="100px">
+    <el-form ref="form"  label-width="80px">
       <el-form-item label="原背景">
         <div class="pre-view-img">
           <el-image 
@@ -170,17 +170,12 @@ export default {
   overflow: auto;
   margin-top: 20px;
   .pre-view-img{
-    height: 300px;
+    // height: 300px;
     width: 300px;
-    // height: auto;
+    height: auto;
     // width: 60%;
   }
-  .new-pre-view-img{
-    height: 300px;
-    width: 300px;
-    // height: auto;
-    // width: 60%;
-  }
+
   /deep/.avatar-uploader .el-upload {
     border: 1px dashed #d9d9d9;
     border-radius: 6px;

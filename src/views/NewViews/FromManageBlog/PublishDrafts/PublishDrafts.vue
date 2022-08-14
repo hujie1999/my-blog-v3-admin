@@ -2,7 +2,7 @@
 <template>
   <div id="editblog-page">
       <!-- <span>this is PublishDraft page</span> -->
-      <el-form ref="form" :model="presend" label-width="100px">
+      <el-form ref="form" :model="presend" label-width="80px">
         <el-form-item label="原标题">
             <span v-text="info['Blog_Title']"></span>
         </el-form-item>
@@ -116,10 +116,10 @@
         </el-form-item>
         <el-form-item>
             <el-button @click="updateBlog" type="success" 
-            style="width:120px;height:45px;margin:50px 0px">提交修改</el-button>
+            size="medium">提交修改</el-button>
 
             <el-button @click="PublishDraft" type="primary" 
-            style="width:120px;height:45px;margin:50px 0px">发布</el-button>
+            size="medium">发布</el-button>
         </el-form-item>
       </el-form>   
   </div>

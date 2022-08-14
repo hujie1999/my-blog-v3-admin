@@ -125,21 +125,23 @@ export default {
 
 <style lang="less" scoped>
 #manage-tag{
-  height: 80vh;
+  // height: 80vh;
+  height: auto;
   width: auto;
-  border: 1px solid #e0e0e0;
-  border-radius: 15px;
-  margin: 0px 5px;
+  // border: 1px solid #e0e0e0;
+  // border-radius: 15px;
+  // margin: 0px 5px;
   padding: 5px 10px;
   overflow: auto;
   .tag-list-block{
     min-height: 200px;
     height: auto;
-    width: 600px;
+    width: 650px;
     padding: 10px 5px;
-    border-radius: 15px;
+    // border-radius: 15px;
     background: #f5f5f5;
     line-height: 50px;
+    overflow: auto;
     .tag-style{
       margin-right: 10px;
     }
@@ -150,8 +152,9 @@ export default {
     width: 650px;
     line-height: 50px;
     padding: 10px 5px;
-    border-radius: 15px;
+    // border-radius: 15px;
     background: #f5f5f5;
+    overflow: auto;
     .new-tag-style{
       margin-right: 8px;
     }

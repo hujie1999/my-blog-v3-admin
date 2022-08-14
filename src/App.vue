@@ -28,7 +28,7 @@ export default {
 <style>
 html,body{
   font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
-  /* box-sizing: border-box !important; */
+  box-sizing: border-box !important;
   padding: 0px;
   margin: 0px;
 }
@@ -37,6 +37,8 @@ html,body{
   display: none;
 }
 
-
+.el-tabs--border-card>.el-tabs__content {
+    padding: 0 !important;
+}
 
 </style>

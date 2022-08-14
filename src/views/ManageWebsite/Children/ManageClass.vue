@@ -123,9 +123,9 @@ export default {
 
 <style lang="less" scoped>
 #manage-class{
-  height: 80vh;
+  // height: 80vh;
+  height: auto;
   width: auto;
-  margin: 0px 5px;
   padding: 5px 10px;
   overflow: auto;
   // .tag-class-block{
@@ -133,9 +133,11 @@ export default {
   // }
   .new-class-list-block{
     padding: 20px 0px;
-    min-height: 280px;
+    min-height: 250px;
     width: 650px;
-    background: blanchedalmond;
+    // background: blanchedalmond;
+    background: #f5f5f5;
+    overflow: auto;
     .new-tag-style{
       margin-left: 8px;
     }

@@ -20,7 +20,7 @@
      <el-table
       :data="information"
       style="width:100%"
-      height="60vh"
+      height="65vh"
     >
       <el-table-column type="expand">
         <template slot-scope="props">

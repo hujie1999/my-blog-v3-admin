@@ -1,9 +1,10 @@
 <template>
   <div id="manage-avatar">
     <!-- 头像展示区域 -->
+    <h5>头像列表</h5>
       <div class="avatar-show-block">
         <div class="view-avatar">
-          <h5>头像列表</h5>
+          
 
           <div class="avatar-area">
 
@@ -194,32 +195,30 @@ export default {
 
 <style lang='less' scoped>
 #manage-avatar{
-  height: 80vh;
+  // height: 80vh;
+  
+  height: auto;
   width: auto;
   overflow: auto;
-  padding: 5px;
+  padding: 5px 10px 0 10px;
   h5{
     margin:0px !important;
-    padding: 5px;
+    padding: 5px 0px;
   }
   .avatar-show-block{
-    min-height: 300px;
-    max-height: 400px;
+    box-sizing: border-box;
     height: auto;
     width: 80%;
-    //  overflow: auto;
-    // background: blueviolet;
-    border: 1px solid black;
-    border-radius: 5px;
-
+    border: 1px solid #eee;
+    padding: 5px;
     .avatar-area{
       overflow: auto;
-      min-height: 200px;
-      max-height: 300px;
+      height: 300px;
       /deep/img{
         width: 110px;
         height: 110px;
-        margin: 5px !important;
+        // margin: 5px !important;
+        border: 1px solid #eee;
       }
       /deep/img:hover{
         position: relative;
@@ -229,8 +228,8 @@ export default {
   }
   }
   .avatar-delect-block{
-    margin-top: 5px;
-    min-height: 300px;
+    // margin-top: 5px;
+    // min-height: 300px;
     height: auto;
     width: auto;
     // background: cadetblue;
@@ -244,11 +243,13 @@ export default {
       width: 200px;
       height: auto;
       word-wrap: break-word;
+      font-size: 14px;
+      margin: 3px 0px;
     }
   }
  
   .avatar-upload-block{
-    margin-top: 5px;
+    // margin-top: 5px;
     min-height: 300px;
     height: auto;
     width: auto;
@@ -278,6 +279,9 @@ export default {
     height: 178px;
     display: block;
   }
-
+  .el-card.is-always-shadow, .el-card.is-hover-shadow:focus, .el-card.is-hover-shadow:hover {
+    -webkit-box-shadow: none !important; 
+    box-shadow: none !important; 
+}
 }
 </style>

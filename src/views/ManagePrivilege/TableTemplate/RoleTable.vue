@@ -3,7 +3,7 @@
       <el-table
       :data="information"
       style="width:100%"
-      height="500px"
+      height="450px"
     >
       <el-table-column prop="Admin_Role" label="身份名称" width="100">
       </el-table-column>

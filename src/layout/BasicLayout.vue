@@ -103,7 +103,6 @@ export default {
   height: auto;
 }
 .main{
-  /* overflow: auto !important; */
   width: 100%;
 }
 .content{
@@ -112,43 +111,6 @@ export default {
   background: #fff;
   height: calc(100vh - 170px );
   width: inherit !important;
-  /* width: 100%; */
 }
-/* .el-header{
-  height: 6px;
-  width: auto;
-  text-align: center;
-  line-height: 60px;
-  background-color: #b3c0d1;
-} */
-/* .el-footer {
-  margin: 0px;
-  padding: 0px;
-  height: auto;
-  width: auto;
-  line-height: 60px;
-} */
 
-/* .el-aside {
-  background-color: #545c64;
-  color: #333;
-  text-align: center;
-  width: auto !important;
-  overflow: scroll;
-} */
-/* 隐藏滚动条 */
-/* .el-aside::-webkit-scrollbar {
-  display: none;
-} */
-
-/* .el-main {
-  color: #333;
-  background:darkcyan;
-  height: calc(100vh - 120px );
-  padding: 0;
-
-}
-.el-main::-webkit-scrollbar {
-  display: none;
-} */
 </style>

@@ -92,7 +92,7 @@ export default {
   // }
   /deep/.el-tabs__header {
 
-    padding: 0 50px !important;
+    padding: 0 10px !important;
   }
   
 }

@@ -149,28 +149,21 @@ export default {
 
 <style>
 #manage-adv{
-    min-height: 90vh;
     height: auto;
     width: auto;
-    /* background: blanchedalmond; */
     padding: 0;
     margin: 0;
 }
-.img-control{
-    height: auto;
-    max-width: 400px;
-    /* background: blueviolet; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.adv-img-block{
+    height: 400px;
+    width: 250px;
+    border: 1px solid #eee;
+    overflow: auto;
+    padding: 5px 0px 0px 5px;
 }
-.img-control img{
-    /* min-height: 295px;
-    min-width: 100%; */
-    height: 100%;
-    width: 100%;
-    background: #fff;
 
+.img-control img{
+    height: auto;
+    width: 200px;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="publish-page">
     <!-- <h2>发布博客</h2> -->
-    <el-form ref="form" :model="presend" label-width="100px">
+    <el-form ref="form" :model="presend" label-width="80px">
       <el-form-item label="标题">
         <el-input
           ref="input"
@@ -84,13 +84,13 @@
         <el-button
           @click="publishBlog"
           type="success"
-          style="width: 120px; height: 45px; margin: 50px 0px"
+          size="medium"
           >发布博客</el-button
         >
         <el-button
           @click="saveAsDraft"
           type="primary"
-          style="width: 120px; height: 45px; margin: 50px 0px"
+          size="medium"
           >保存草稿</el-button
         >
       </el-form-item>

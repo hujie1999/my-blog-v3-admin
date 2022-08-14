@@ -1,7 +1,7 @@
 <template>
   <div id="manage-privilege">
     <div class="role-list">
-        <h3>角色表：</h3>
+        <h4>角色表：</h4>
         <!-- table -->
         <roletable
         :information="information"
@@ -23,7 +23,7 @@
         </rolelistpagenation>
     </div>
     <div class="role-details">
-        <h3>角色详情：</h3>
+        <h4>角色详情：</h4>
         <roledetails
         :sidebar="preview_role_sidbar"
         >
@@ -135,33 +135,25 @@ export default {
 
 <style lang="less" scoped>
 #manage-privilege{
-    height: 80vh;
+    // height: 80vh;
+    height: auto;
     width: auto;
     padding: 0px 20px;
-    // border: 1px  solid black;
     display: flex;
     .role-list{
-        min-height: 400px;
-        min-width: 850px;
-        height: auto;
+        height: 560px;
         width: auto;
-        padding: 0px 5px;
         // background: blanchedalmond;
         border: 1px solid #e0e0e0;
-        border-radius: 15px;
     }
     .role-details{
-        
-        min-width: 400px;
-        max-width: 500px;
-        min-height: 400px;
-        height: auto;
-        padding: 0px 5px;
-        // background: cadetblue;
-        overflow: auto;
+        height: 560px;
+        width: 100%;
+        overflow: scroll;
+        float: none;
         margin-left: 20px;
         border: 1px solid #e0e0e0;
-        border-radius: 15px;
+
     }
 }
 </style>

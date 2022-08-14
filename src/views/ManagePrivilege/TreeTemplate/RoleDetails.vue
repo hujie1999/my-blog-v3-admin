@@ -1,6 +1,6 @@
 <template>
   <div id="role-datails">
-    <h4>sidebar展示权限</h4>
+    <h5>sidebar展示权限</h5>
     <el-tree 
     :data="sidebar" 
     :props="previewProps"
@@ -10,7 +10,7 @@
 	  :default-expanded-keys="sidebarDefaultShowNodes"
     >
     </el-tree>
-    <h4>后台接口访问权限</h4>
+    <h5>后台接口访问权限</h5>
     <!-- <el-tree
       :data="sidebarData"
       :props="defaultProps"
@@ -113,6 +113,6 @@ export default {
 #role-datails {
   height: auto;
   width: auto;
-
+  padding-left: 20px;
 }
 </style>

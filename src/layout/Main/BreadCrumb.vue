@@ -52,12 +52,13 @@ export default {
 </script>
 <style scoped>
 #breadcrumb{
-    height: 50px;
+    height: 49px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background: #fff;
+    border-bottom: 1px solid #eee;
 }
 .el-breadcrumb {
     padding-left: 5px;

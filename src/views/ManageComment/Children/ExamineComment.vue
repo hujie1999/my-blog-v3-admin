@@ -30,7 +30,7 @@
      <el-table
       :data="information"
       style="width:100%"
-      height="55vh"
+      height="60vh"
       @selection-change="handleSelectionChange"
     > 
     <el-table-column
@@ -138,6 +138,7 @@
     </el-table>
 
       <div
+      class="op-btn"
       v-if="activeName=='preexmine_blogcomment' || activeName=='preexmine_messagecomment'"
       >
         <el-button 
@@ -492,6 +493,9 @@ export default {
     margin-bottom: 0;
     width: 50%;
     padding: 0px 20px 0px 0px;
+  }
+  .op-btn{
+    padding: 5px 10px;
   }
  
 
