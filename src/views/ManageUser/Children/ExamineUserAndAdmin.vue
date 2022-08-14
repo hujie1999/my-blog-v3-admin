@@ -65,9 +65,7 @@
         @click="multiRefuse"
         >批量否决</el-button>
       </div>
-      </el-tabs>
-
-    <!-- 分页器 -->
+      <!-- 分页器 -->
       <userlistpagenation 
       v-if="this.information.length!=0"
       :current='current_page'
@@ -78,6 +76,9 @@
       @handledPageParams='getPageParam'
       >
       </userlistpagenation>
+      </el-tabs>
+
+    
 
   </div>
 </template>
@@ -374,7 +375,8 @@ export default {
 
 <style lang="less" scoped>
 #examine-user-adn-admin{
-  height: 90vh;
+  // height: 90vh;
+  height: auto;
   width: auto;
   .el-tabs--border-card {  
     box-shadow: none !important; 

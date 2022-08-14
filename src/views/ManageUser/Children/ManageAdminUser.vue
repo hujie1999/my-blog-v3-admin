@@ -19,7 +19,7 @@
      <el-table
       :data="information"
       style="width:100%"
-      height="70vh"
+      height="60vh"
     >
       <el-table-column type="expand"
       label="详细" width="80"
@@ -101,6 +101,16 @@
         </template>
       </el-table-column>
       
+      <userlistpagenation 
+      v-if="this.information.length!=0"
+      :current='current_page'
+      :start="start"
+      :length="length"
+      :total="total_count"
+      :key="pagenation_key"
+      @handledPageParams='getPageParam'
+      >
+      </userlistpagenation>
     </el-table>
 
 
@@ -116,16 +126,7 @@
 
       </admintabledrawer>
    
-      <userlistpagenation 
-      v-if="this.information.length!=0"
-      :current='current_page'
-      :start="start"
-      :length="length"
-      :total="total_count"
-      :key="pagenation_key"
-      @handledPageParams='getPageParam'
-      >
-      </userlistpagenation>
+      
 
   </div>
 </template>
@@ -337,7 +338,8 @@ export default {
 
 <style lang="less" scoped>
 #manage-admin-user{
-  height: 90vh;
+  // height: 90vh;
+  height: auto;
   width: auto;
   .el-tabs--border-card {  
     box-shadow: none !important; 

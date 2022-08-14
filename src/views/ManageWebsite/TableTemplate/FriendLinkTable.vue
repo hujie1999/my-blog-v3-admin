@@ -4,7 +4,7 @@
       <el-table
       :data="linklist"
       style="width:100%"
-      height="70vh"
+      height="65vh"
     >
       <el-table-column prop="id" label="id" width="80">
       </el-table-column>

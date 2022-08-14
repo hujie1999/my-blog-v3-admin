@@ -165,9 +165,10 @@ export default {
 
 <style lang="less" scoped>
 #manage-background-img{
-  height: 80vh;
+  height: auto;
   width: auto;
   overflow: auto;
+  margin-top: 20px;
   .pre-view-img{
     height: 300px;
     width: 300px;

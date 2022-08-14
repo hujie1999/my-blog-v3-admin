@@ -3,7 +3,7 @@
       <el-table
       :data="information"
       style="width:100%"
-      height="70vh"
+      height="55vh"
     >
       <el-table-column type="expand"
       label="详细" width="80"

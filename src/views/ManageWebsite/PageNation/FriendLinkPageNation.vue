@@ -67,7 +67,7 @@ export default {
     align-items: flex-start;
     flex-direction: row;
     // padding-top: 20px;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
     // margin: 20px 0px;
 }
 </style>

@@ -57,11 +57,9 @@ export default {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* margin: 20px 5px; */
     background: #fff;
 }
 .el-breadcrumb {
-    /* float: left; */
     padding-left: 5px;
 }
 </style>

@@ -2,11 +2,11 @@ export default {
     
 
     //api 路径
-    // apibaseurl : '/admin',
-    apibaseurl : 'https://www.xiaohai-learn.pub/api/admin',
+    apibaseurl : '/admin',
+    // apibaseurl : 'https://www.xiaohai-learn.pub/api/admin',
     //图片基础路径
-    // userimgbaseurl :'http://server.xiaohai-learn.pub:8889',
-    userimgbaseurl :'https://www.xiaohai-learn.pub/image',
+    userimgbaseurl :'http://localhost:8889',
+    // userimgbaseurl :'https://www.xiaohai-learn.pub/image',
     
     //summary图片只规定上传一张，重复上传为替换
    

@@ -29,7 +29,6 @@
       @changeView='handleTableViewChange'
       >
       </bloglisttable>
-      
       <!-- 分页器 -->
       <bloglistpagenation 
       v-if="this.list.length!=0"
@@ -41,7 +40,9 @@
       :key="pagenation_key"
       >
       </bloglistpagenation>
+      
     </el-tabs>
+    
   </div>
 </template>
 
@@ -176,11 +177,7 @@ export default {
 
 <style lang="less" scoped>
 #manageblog-page{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  // height: 80vh;
+  
   width: auto;
   height: auto;
   overflow: auto;
@@ -189,7 +186,6 @@ export default {
     width: 100% !important;
   }
   .el-tab-pane{
-    // height: 80vh !important;
     width: 100%;
   }
 }

@@ -1,26 +1,24 @@
 <template>
   <div id="layout">
-    <el-container>
-      <el-header>
-        <navigation></navigation>
-      </el-header>
+    <div class="head">
+      <navigation></navigation>
+    </div>
+    <div class="middle">
+      <div class="aside">
+        <sidebar></sidebar>
+      </div>
+      <div class="main">
+        <breadcrumb></breadcrumb>
 
-      <el-container>
-        <el-aside>
-          <!-- <sidebar :sidebar="reactive_sidebar"></sidebar> -->
-          <sidebar></sidebar>
-        </el-aside>
-
-        <el-main>
-          <breadcrumb></breadcrumb>
+        <div class="content">
           <router-view name="main"></router-view>
-        </el-main>
-      </el-container>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <foot></foot>
+    </div>
 
-      <el-footer>
-        <foot></foot>
-      </el-footer>
-    </el-container>
   </div>
 </template>
 
@@ -75,56 +73,82 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
 #layout {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   background: #fff;
   position: relative;
+  overflow: hidden;
 }
-.el-header{
+
+.head{
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: #b3c0d1;
+}
+.middle{
+  display: flex;
+  width: 100vw;
+}
+.foot{
+  height: 60px;
+  width: 100%;
+}
+.aside{
+  width: auto;
+  height: auto;
+}
+.main{
+  /* overflow: auto !important; */
+  width: 100%;
+}
+.content{
+  overflow: auto;
+  /* background: sienna; */
+  background: #fff;
+  height: calc(100vh - 170px );
+  width: inherit !important;
+  /* width: 100%; */
+}
+/* .el-header{
   height: 6px;
   width: auto;
   text-align: center;
   line-height: 60px;
   background-color: #b3c0d1;
-}
-.el-footer {
-  /* background-color: #b3c0d1;
-  color: #333;
-  text-align: center; */
+} */
+/* .el-footer {
   margin: 0px;
   padding: 0px;
   height: auto;
   width: auto;
   line-height: 60px;
-}
+} */
 
-.el-aside {
+/* .el-aside {
   background-color: #545c64;
   color: #333;
   text-align: center;
-  /* height: auto !important; */
   width: auto !important;
   overflow: scroll;
-}
+} */
 /* 隐藏滚动条 */
-.el-aside::-webkit-scrollbar {
+/* .el-aside::-webkit-scrollbar {
   display: none;
-}
+} */
 
-.el-main {
+/* .el-main {
   color: #333;
-  /* text-align: center; */
-  /* background:darkcyan; */
-  height: 100%;
-  /* height: 100vh; */
+  background:darkcyan;
+  height: calc(100vh - 120px );
   padding: 0;
-  /* line-height: 0 !important; */
+
 }
 .el-main::-webkit-scrollbar {
   display: none;
-}
+} */
 </style>

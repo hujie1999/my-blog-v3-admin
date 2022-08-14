@@ -30,7 +30,7 @@
      <el-table
       :data="information"
       style="width:100%"
-      height="70vh"
+      height="55vh"
       @selection-change="handleSelectionChange"
     > 
     <el-table-column
@@ -153,9 +153,8 @@
         @click="multiRefuse"
         >批量否决</el-button>
       </div>
-    </el-tabs>
 
-    <!-- 分页器 -->
+      <!-- 分页器 -->
       <commentslistpagenation 
       v-if="this.information.length!=0"
       :current='current_page'
@@ -166,6 +165,9 @@
       @handledPageParams='getPageParam'
       >
       </commentslistpagenation>
+    </el-tabs>
+
+    
 
   </div>
 </template>
@@ -468,7 +470,7 @@ export default {
 
 <style lang="less" scoped>
 #blog-comments-table{
-  height: 90vh;
+  height: auto;
   width: auto;
   .el-tabs--border-card {  
     box-shadow: none !important; 

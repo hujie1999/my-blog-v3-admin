@@ -19,12 +19,10 @@ export default {
 <style scoped>
 #footer{
   background:#374046;
-  width: 100vw !important;
+  width: 100%;
   height: 60px;
-  /* border-radius: 4px 4px 0 0 ; */
   font-size: 14px;
   line-height: 8px;
-  /* color:#efebe9; */
   text-align: center;
 
   display: flex;

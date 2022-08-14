@@ -20,7 +20,7 @@
      <el-table
       :data="information"
       style="width:100%"
-      height="70vh"
+      height="60vh"
     >
           <el-table-column type="expand">
         <template slot-scope="props">
@@ -100,9 +100,6 @@
       
     </el-table>
 
-
-    </el-tabs>
-
     <!-- 分页器 -->
       <commentslistpagenation 
       v-if="this.information.length!=0"
@@ -114,6 +111,9 @@
       @handledPageParams='getPageParam'
       >
       </commentslistpagenation>
+    </el-tabs>
+
+    
 
   </div>
 </template>
@@ -274,7 +274,8 @@ export default {
 
 <style lang="less" scoped>
 #blog-comments-table{
-  height: 90vh;
+  // height: 90vh;
+  height: auto;
   width: auto;
   .el-tabs--border-card {  
     box-shadow: none !important; 

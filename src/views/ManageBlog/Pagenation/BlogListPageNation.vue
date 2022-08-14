@@ -62,7 +62,11 @@ export default {
 
 <style lang='less'>
 #block{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 </style>

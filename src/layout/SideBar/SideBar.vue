@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="side-bar">
     <div class="switch-block">
       <el-switch v-model="isCollapse" active-color="#13ce66"> </el-switch>
     </div>
@@ -14,7 +14,6 @@
       text-color="#fff"
       active-text-color="#ffd04b"
     >
-      <!-- <h2>{{$router.currentRoute.path}}</h2> -->
       <span v-for="(item, index) in sidebar" :key="index">
         <el-submenu v-if="item.child" :index="item.path">
           <template slot="title">
@@ -190,17 +189,28 @@ export default {
 </script>
 
 <style>
+.el-menu {
+    border-right: none !important;
+}
+#side-bar{
+  width: auto;
+  background: #545c64;
+  height: calc(100vh - 120px );
+  overflow: auto !important;
+}
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 180px;
-  /* min-height: 400px; */
   height: auto;
+  overflow: hidden;
 }
+
 .switch-block {
   height: 56px;
   width: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .el-menu-item-group .el-menu-item {
     font-size: 12px !important;
