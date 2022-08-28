@@ -1,14 +1,14 @@
 <template>
   <div id="layout">
     <div class="head">
-      <navigation></navigation>
+      <Navigate></Navigate>
     </div>
     <div class="middle">
       <div class="aside">
-        <sidebar></sidebar>
+        <SideBar></SideBar>
       </div>
       <div class="main">
-        <breadcrumb></breadcrumb>
+        <BreadCrumb></BreadCrumb>
 
         <div class="content">
           <router-view name="main"></router-view>
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="foot">
-      <foot></foot>
+      <Footer></Footer>
     </div>
 
   </div>
@@ -25,7 +25,7 @@
 <script>
 import { alltablistAPI, gettablistbyroleAPI } from "../http/api";
 import qs from "qs";
-import Navigation from "./Navigation/Navigation.vue";
+import Navigate from "./Navigation/Navigation.vue";
 import SideBar from "./SideBar/SideBar.vue";
 import BreadCrumb from "./Main/BreadCrumb.vue";
 import Footer from './Footer/Footer.vue'
@@ -40,10 +40,10 @@ export default {
     };
   },
   components: {
-    sidebar: SideBar,
-    navigation: Navigation,
-    breadcrumb: BreadCrumb,
-    foot: Footer
+    SideBar,
+    Navigate,
+    BreadCrumb,
+    Footer
   },
   methods:{
   },
@@ -85,10 +85,7 @@ export default {
 }
 
 .head{
-  height: 60px;
-  width: 100%;
-  line-height: 60px;
-  background-color: #b3c0d1;
+ 
 }
 .middle{
   display: flex;

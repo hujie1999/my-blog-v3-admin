@@ -9,12 +9,16 @@ import MavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
 import axios from 'axios'
 import hljs from 'highlight.js'
+import * as echarts from 'echarts';
 import moment from 'moment'
+
 Vue.prototype.$hljs = hljs
 Vue.prototype.$axios = axios
+Vue.prototype.$echarts = echarts
 Vue.prototype.$moment = moment
 
 Vue.config.productionTip = false
+
 Vue.use(ElementUI)
 Vue.use(MavonEditor)
 

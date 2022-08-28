@@ -521,3 +521,15 @@ export function deletefriendlinkAPI(params){
 export function updatefriendlinkAPI(params){
     return http.post('/updatefriendlink',params)
 }
+
+
+
+//访问量查询
+
+export function getOneYearViewData(params){
+    return http.post('/getOneYearViewData',params)
+}
+
+export function getYesterdayViewData(){
+    return http.get('getYesterdayViewData')
+}

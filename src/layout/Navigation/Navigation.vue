@@ -53,7 +53,14 @@ export default {
 
 <style>
 #nav {
+  box-sizing: border-box;
   padding: 0px 10px;
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+  /* box-shadow: rgb(0 0 0 / 10%) 1px 1px 10px; */
 }
 
 .avatar {
@@ -66,6 +73,7 @@ float: left;
 }
 .info {
   float: right;
+  margin-right: 20px;
 }
 .icon-size{
     font-size: 25px;

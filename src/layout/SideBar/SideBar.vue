@@ -10,8 +10,8 @@
       class="el-menu-vertical-demo"
       :unique-opened="true"
       :collapse="isCollapse"
-      background-color="#545c64"
-      text-color="#fff"
+      background-color="#374046"
+      text-color="#e0e0e0"
       active-text-color="#ffd04b"
     >
       <span v-for="(item, index) in sidebar" :key="index">
@@ -194,7 +194,8 @@ export default {
 }
 #side-bar{
   width: auto;
-  background: #545c64;
+  /* background: #545c64; */
+  background: #374046;
   height: calc(100vh - 120px );
   overflow: auto !important;
 }
