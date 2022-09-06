@@ -14,15 +14,15 @@ service.interceptors.request.use(
     config=>{
         if(config.headers['Content-Type'] == 'multipart/form-data') {
             config.headers['Content-Type'] = 'multipart/form-data'
+        }
+        else{
+            config.headers['Content-Type'] = 'application/x-www-form-urlencoded'         
             const payload = {
                 uniqueid : store.getters.uniqueid,
                 islogin : store.getters.islogin
             }
-            Object.assign(config.data,payload)
-        }
-        else{
-            config.headers={
-                'Content-Type':'application/x-www-form-urlencoded'
+            if(config.method == 'post'){
+                Object.assign(config.data,payload)
             }
             config.data = typeof config.data=='string'?config.data:QS.stringify(config.data) 
         }
