@@ -21,13 +21,11 @@ const http ={
             method: 'post',
             url:url,    
         }
-        const payload = {
-            uniqueid : store.getters.uniqueid,
-            islogin : store.getters.islogin
-        }
-        config.data = { ...payload,...params }
         if(headers)
         config.headers = headers
+        
+        config.data = params
+        
         return request(config)
     }
 }

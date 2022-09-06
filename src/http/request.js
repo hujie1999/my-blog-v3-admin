@@ -14,6 +14,11 @@ service.interceptors.request.use(
     config=>{
         if(config.headers['Content-Type'] == 'multipart/form-data') {
             config.headers['Content-Type'] = 'multipart/form-data'
+            const payload = {
+                uniqueid : store.getters.uniqueid,
+                islogin : store.getters.islogin
+            }
+            Object.assign(config.data,payload)
         }
         else{
             config.headers={
