@@ -17,13 +17,15 @@ service.interceptors.request.use(
         }
         else{
             config.headers['Content-Type'] = 'application/x-www-form-urlencoded'         
-            const payload = {
-                uniqueid : store.getters.uniqueid,
-                islogin : store.getters.islogin
-            }
-            if(config.method == 'post'){
-                Object.assign(config.data,payload)
-            }
+            // const payload = {
+            //     uniqueid : store.getters.uniqueid,
+            //     islogin : store.getters.islogin
+            // }
+            // if(config.method == 'post'){
+            //     Object.assign(config.data,payload)
+            // }
+            // config.data = typeof config.data=='string'?config.data:QS.stringify(config.data) 
+
             config.data = typeof config.data=='string'?config.data:QS.stringify(config.data) 
         }
         let token = store.getters.token

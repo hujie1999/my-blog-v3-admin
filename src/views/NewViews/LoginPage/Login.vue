@@ -189,8 +189,21 @@ export default {
         }
       });
     },
+    //按下回车键 登录
+    keyDownLogin(e) {
+      // console.log(e)
+      if(e&&e.keyCode===13){
+        this.submitForm('userinfo')
+      }
+    }
   },
-  created(){
+  created() {
+    let _this=this
+    window.addEventListener('keydown',_this.keyDownLogin)
+  },
+  beforeDestroy(){
+    let _this=this
+    window.removeEventListener('keydown',_this.keyDownLogin)
   }
 };
 </script>

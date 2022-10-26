@@ -251,6 +251,17 @@ const router = new Router({
               },
             },
             {
+              path:'manageversion',
+              name:'manageversion',
+              meta: {
+                tittle : '版本历史管理',
+                requiresAuth: true,
+              },
+              components:{
+                managewebsite: ()=>import('../views/ManageWebsite/Children/ManageVersion.vue')
+              },
+            },
+            {
               path:'manageavatar',
               name:'manageavatar',
               meta: {

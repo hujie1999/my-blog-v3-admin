@@ -207,10 +207,10 @@ export default {
   },
   methods:{
     dealClick(e){
-      console.log(e);
+      // console.log(e);
     },
     dealDataZoom(e){
-      console.log(e)
+      // console.log(e)
     },
     dealYear(e){
       // console.log(e);

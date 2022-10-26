@@ -533,3 +533,18 @@ export function getOneYearViewData(params){
 export function getYesterdayViewData(){
     return http.get('getYesterdayViewData')
 }
+
+//更新版本记录
+//添加一条记录
+export function addversionrecordAPI(params){
+    return http.post('/addversionrecord',params)
+}
+//获取所有记录
+export function getversionrecordsAPI(){
+    return http.get('getversionrecords')
+}
+//更新记录
+export function updateversionrecordAPI(params){
+    return http.post('/updateversionrecord',params)
+}
+

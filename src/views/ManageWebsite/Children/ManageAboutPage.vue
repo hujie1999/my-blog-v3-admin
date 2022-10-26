@@ -106,13 +106,13 @@ export default {
       })
     },
     handleAddImgFunc(path,condition){
-      console.log(path)
-      console.log(condition)
+      // console.log(path)
+      // console.log(condition)
       this.presend.About_Img=this.presend.About_Img.concat(Array(path))
     },
     getTextChange(condition,text){
-      console.log(condition)
-      console.log(text)
+      // console.log(condition)
+      // console.log(text)
       this.presend.About_Content = text
     },
     handleDelImgList(path,identity){

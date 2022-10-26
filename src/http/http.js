@@ -4,16 +4,19 @@ import request from './request'
 const http ={
     
     get(url){
-        const payload = {
-            uniqueid : store.getters.uniqueid,
-            islogin : store.getters.islogin
-        }
-        let config = {
+        // const payload = {
+        //     uniqueid : store.getters.uniqueid,
+        //     islogin : store.getters.islogin
+        // }
+        // let config = {
+        //     method: 'get',
+        //     url:url,
+        //     params : { ...payload }
+        // }
+        const config = {
             method: 'get',
-            url:url,
-            params : { ...payload }
+            url:url
         }
-        
         return request(config)
     },
     post(url,params,headers){

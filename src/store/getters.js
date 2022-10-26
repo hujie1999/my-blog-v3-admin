@@ -6,3 +6,8 @@ export const token = state => state.AdminInfo.token
 export const admininfo = state => state.AdminInfo
 //获取 Admin信息的登陆状态
 export const islogin = state => state.AdminInfo.islogin
+
+//获取 Admin nickname
+export const nickname = state => state.AdminInfo.nickname
+//获取 Admin account
+export const account = state => state.AdminInfo.account

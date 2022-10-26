@@ -153,16 +153,21 @@ export default {
             },
             {
               idx: "19",
+              title: "版本历史管理",
+              path: "/managewebsite/manageversion",
+            },
+            {
+              idx: "20",
               title: "头像管理",
               path: "/managewebsite/manageavatar",
             },
             {
-              idx: "20",
+              idx: "21",
               title: "广告管理",
               path: "/managewebsite/manageadvertisement",
             },
             {
-              idx: "21",
+              idx: "22",
               title: "友链管理",
               path: "/managewebsite/manageafriendlink",
             }
