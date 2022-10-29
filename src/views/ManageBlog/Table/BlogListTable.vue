@@ -5,7 +5,7 @@
     <el-table
       :data="information"
       style="width: 100%"
-      height="65vh"
+      height="75vh"
       :cell-style="cellStyle"
     >
       <el-table-column type="expand" label="详细" width="80">

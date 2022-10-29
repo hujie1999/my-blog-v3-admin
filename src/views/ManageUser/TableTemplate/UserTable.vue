@@ -3,7 +3,7 @@
     <el-table
       :data="information"
       style="width:100%"
-      height="60vh"
+      height="70vh"
       @selection-change="handleSelectionChange"
     >
       <el-table-column

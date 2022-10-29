@@ -18,6 +18,9 @@ let state = {
       account: '',
       uniqueid: '',
   },
+  sidebar:{
+    isCollapse:false
+  }
 }
 let store = new Vuex.Store({
   state,

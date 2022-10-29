@@ -1,12 +1,25 @@
+//环境
+const env = process.env.NODE_ENV
+//后台域名
+const domainName = 'https://www.xiaohai-learn.pub'
+
+
 export default {
-    
 
     //api 路径
+    apibaseurl:env=='development'
+    ?'/admin':env=='production'
+    ?`${domainName}/api/admin`:'unkonw env!!!',
     // apibaseurl : '/admin',
-    apibaseurl : 'https://www.xiaohai-learn.pub/api/admin',
+    // apibaseurl : 'https://www.xiaohai-learn.pub/api/admin',
+
+
     //图片基础路径
+    userimgbaseurl:env=='development'
+    ?'http://localhost:8889':env=='production'
+    ?`${domainName}/image`:'unkonw env!!!',
     // userimgbaseurl :'http://localhost:8889',
-    userimgbaseurl :'https://www.xiaohai-learn.pub/image',
+    // userimgbaseurl :'https://www.xiaohai-learn.pub/image',
     
     //summary图片只规定上传一张，重复上传为替换
    

@@ -141,13 +141,16 @@ export default {
     padding: 0px 20px;
     display: flex;
     .role-list{
-        height: 560px;
+        // height: 560px;
+        height: 620px;
         width: auto;
         // background: blanchedalmond;
         border: 1px solid #e0e0e0;
     }
     .role-details{
-        height: 560px;
+        // height: 560px;
+        height: 620px;
+
         width: 100%;
         overflow: scroll;
         float: none;

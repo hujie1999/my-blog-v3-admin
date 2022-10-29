@@ -15,9 +15,9 @@
         </div>
       </div>
     </div>
-    <div class="foot">
+    <!-- <div class="foot">
       <Footer></Footer>
-    </div>
+    </div> -->
 
   </div>
 </template>
@@ -106,7 +106,8 @@ export default {
   overflow: auto;
   /* background: sienna; */
   background: #fff;
-  height: calc(100vh - 170px );
+  /* height: calc(100vh - 170px ); */
+  height: calc(100vh - 110px );
   width: inherit !important;
 }
 

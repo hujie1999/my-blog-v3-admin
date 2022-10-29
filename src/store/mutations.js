@@ -15,4 +15,10 @@ export const resetAdminInfo = (state) => {
 export const modifyToken = (state, token) => {
     state.AdminInfo.token = token 
 }
+//切换sidebar折叠状态
 
+export const switchCollapse = (state) => {
+    state.sidebar.isCollapse = !state.sidebar.isCollapse
+    // state.sidebar.isCollapse = true
+    console.log('switchCollapse',state.sidebar.isCollapse)
+}

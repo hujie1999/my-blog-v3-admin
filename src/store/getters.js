@@ -11,3 +11,5 @@ export const islogin = state => state.AdminInfo.islogin
 export const nickname = state => state.AdminInfo.nickname
 //获取 Admin account
 export const account = state => state.AdminInfo.account
+//获取sidebar折叠状态
+export const isCollapse = state => state.sidebar.isCollapse

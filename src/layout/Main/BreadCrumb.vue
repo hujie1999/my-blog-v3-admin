@@ -1,5 +1,12 @@
 <template>
     <div id="breadcrumb">
+        
+        <div @click="switchSidebar"
+        class="op-side-area"
+        >
+            <i v-if="!isCollapse" class="el-icon-s-fold op-side-btn"></i>
+            <i v-else class="el-icon-s-unfold op-side-btn"></i>
+        </div>
         <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item
             v-for="(item,index) in breadList"
@@ -25,6 +32,11 @@ export default {
   components:{
   
   },
+  computed:{
+    isCollapse(){
+      return this.$store.getters.isCollapse
+    }
+  },
   methods:{
       getBreadList(v){
           const matched = v.matched
@@ -37,10 +49,14 @@ export default {
               }
               
           }
+      },
+      switchSidebar(){
+          this.$store.commit('switchCollapse')
       }
   },
   created(){
       this.getBreadList(this.$route)
+      console.log(this.$store.getters.isCollapse)
   },
   watch:{
       $route(newval){
@@ -62,5 +78,14 @@ export default {
 }
 .el-breadcrumb {
     padding-left: 5px;
+}
+.op-side-area{
+    padding: 0px 10px 0px 10px;
+}
+.op-side-btn{
+    font-size: 28px;
+}
+.active{
+    color: #ffd04b;
 }
 </style>

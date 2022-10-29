@@ -1,8 +1,8 @@
 <template>
   <div id="side-bar">
-    <div class="switch-block">
+    <!-- <div class="switch-block">
       <el-switch v-model="isCollapse" active-color="#13ce66"> </el-switch>
-    </div>
+    </div> -->
 
     <el-menu
       :router="true"
@@ -49,7 +49,8 @@ export default {
   name: "SideBar",
   data() {
     return {
-      isCollapse: false,
+      // isCollapse: false,
+      
       sidebar: [
         {
           idx: "0",
@@ -187,13 +188,20 @@ export default {
   props:{
     // sidebar:[]
   },
-  methods: {
+  computed:{
+    isCollapse(){
+      return this.$store.getters.isCollapse
+    }
   },
- 
+  methods: {
+  }
 };
 </script>
 
 <style>
+.el-submenu__icon-arrow {
+    right: 10px !important;
+}
 .el-menu {
     border-right: none !important;
 }
@@ -201,7 +209,8 @@ export default {
   width: auto;
   /* background: #545c64; */
   background: #374046;
-  height: calc(100vh - 120px );
+  /* height: calc(100vh - 120px ); */
+  height: calc(100vh - 60px );
   overflow: auto !important;
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {

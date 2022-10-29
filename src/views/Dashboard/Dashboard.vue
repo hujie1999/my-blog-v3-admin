@@ -72,7 +72,7 @@ export default {
       //chart 
       width:'100%',
       height:'90%',
-      // renderType:'svg',
+      renderType:'svg',
       replace_name:['series'],
 
       //选择年份
@@ -268,7 +268,8 @@ export default {
 }
 .left-area{
   width: 49%;
-  height: calc(100vh - 190px);
+  /* height: calc(100vh - 190px); */
+  height: calc(100vh - 130px);
   margin-top: 10px;
   border-radius: 5px;
   /* background: floralwhite; */
@@ -287,7 +288,7 @@ export default {
 }
 .chart-div{
   width: auto;
-  height: 500px;
+  height: 560px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,7 +301,8 @@ export default {
 }
 .right-area{
   width: 49%;
-  height: calc(100vh - 190px);
+  /* height: calc(100vh - 190px); */
+  height: calc(100vh - 130px);
   margin-top: 10px;
   border-radius: 5px;
   /* box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px; */
